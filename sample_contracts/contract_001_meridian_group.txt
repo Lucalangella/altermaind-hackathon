@@ -1,0 +1,147 @@
+================================================================================
+                        SERVICE AGREEMENT
+                    Contract No. CTR-2024-001
+================================================================================
+
+This Service Agreement ("Agreement") is entered into as of January 15, 2024
+("Effective Date") by and between:
+
+PROVIDER: DataVista Solutions S.r.l., with registered office at Via della
+Tecnologia 42, 00144 Rome, Italy, VAT No. IT12345678901, represented by
+Dr. Marco Bianchi, Chief Executive Officer
+
+AND
+
+CLIENT: Meridian Group S.p.A., with registered office at Corso Vittorio
+Emanuele II 120, 20122 Milan, Italy, VAT No. IT98765432100, represented by
+Dott.ssa Elena Rossi, Chief Operating Officer
+
+Industry: Manufacturing
+
+================================================================================
+ARTICLE 1 - SUBJECT MATTER AND SCOPE
+================================================================================
+
+The Provider shall deliver the following products and services to the Client:
+
+1.1 DataVista Cloud Platform - Enterprise License
+    - Up to 500 concurrent users
+    - Unlimited data storage
+    - Annual license fee: EUR 320,000.00
+
+1.2 Data Analytics Module - Advanced Tier
+    - Real-time analytics dashboards
+    - Predictive maintenance integration
+    - Annual fee: EUR 85,000.00
+
+1.3 Implementation and Integration Services
+    - ERP system integration (SAP S/4HANA)
+    - Data migration from legacy systems
+    - One-time fee: EUR 45,000.00
+
+1.4 Training Program
+    - 5-day onsite training for up to 30 users
+    - Online training portal access for 12 months
+    - Fee: EUR 12,000.00
+
+Total Annual Contract Value: EUR 417,000.00
+Total Contract Value (36 months): EUR 1,296,000.00
+
+================================================================================
+ARTICLE 2 - TERM AND RENEWAL
+================================================================================
+
+2.1 This Agreement shall commence on the Effective Date and shall continue
+for a period of thirty-six (36) months, expiring on January 14, 2027.
+
+2.2 The Agreement shall automatically renew for successive periods of
+twelve (12) months each, unless either party provides written notice of
+non-renewal at least ninety (90) days prior to the expiration of the
+then-current term.
+
+================================================================================
+ARTICLE 3 - PRICING AND PAYMENT
+================================================================================
+
+3.1 Payment shall be made quarterly in advance, within thirty (30) days
+of invoice date.
+
+3.2 Annual price adjustments shall not exceed the ISTAT consumer price
+index variation plus 2%.
+
+3.3 A volume discount of 8% is applied to the Cloud Platform license,
+reflecting the multi-year commitment. This discount is standard per the
+Provider's published volume discount schedule.
+
+3.4 Late payments shall accrue interest at a rate of 3.5% per annum above
+the ECB reference rate.
+
+================================================================================
+ARTICLE 4 - SERVICE LEVEL AGREEMENT
+================================================================================
+
+4.1 Platform Availability: The Provider guarantees a monthly uptime of
+99.5% for the Cloud Platform, measured on a calendar month basis.
+
+4.2 Support Response Times:
+    - Critical Issues (P1): Response within 2 hours, resolution target 8 hours
+    - Major Issues (P2): Response within 4 hours, resolution target 24 hours
+    - Minor Issues (P3): Response within 8 hours, resolution target 72 hours
+
+4.3 SLA Credits: For each 0.1% below the guaranteed uptime, the Client
+shall receive a service credit equal to 2% of the monthly platform fee,
+up to a maximum of 15% of the monthly fee.
+
+================================================================================
+ARTICLE 5 - PENALTIES
+================================================================================
+
+5.1 Data Migration Delay: Should the Provider fail to complete the data
+migration within the agreed timeline of 90 days from contract signing,
+a penalty of EUR 1,500 per week of delay shall apply, capped at EUR 15,000.
+
+5.2 SLA Breach: Repeated failure to meet SLA targets (defined as three
+consecutive months below guaranteed uptime) shall entitle the Client to
+terminate the Agreement with 30 days' notice and receive a refund of
+prepaid fees on a pro-rata basis.
+
+================================================================================
+ARTICLE 6 - LIABILITY
+================================================================================
+
+6.1 The Provider's aggregate liability under this Agreement shall not
+exceed the total fees paid by the Client in the twelve (12) months
+preceding the claim.
+
+6.2 Neither party shall be liable for indirect, incidental, or
+consequential damages.
+
+================================================================================
+ARTICLE 7 - TERMINATION
+================================================================================
+
+7.1 Either party may terminate this Agreement for cause upon sixty (60)
+days' written notice if the other party materially breaches this Agreement
+and fails to cure such breach within thirty (30) days of receiving notice.
+
+7.2 Termination for convenience is permitted after the initial 24-month
+period, subject to a 90-day notice period and payment of an early
+termination fee equal to 25% of the remaining contract value.
+
+================================================================================
+ARTICLE 8 - GOVERNING LAW
+================================================================================
+
+This Agreement shall be governed by and construed in accordance with the
+laws of Italy. Any disputes shall be submitted to the exclusive
+jurisdiction of the Court of Milan.
+
+================================================================================
+SIGNATURES
+================================================================================
+
+For the Provider:                    For the Client:
+Dr. Marco Bianchi                    Dott.ssa Elena Rossi
+CEO, DataVista Solutions S.r.l.      COO, Meridian Group S.p.A.
+
+Date: January 15, 2024               Date: January 15, 2024

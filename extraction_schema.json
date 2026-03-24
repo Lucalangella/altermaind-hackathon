@@ -1,0 +1,226 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contract Extraction Schema",
+  "description": "Schema defining all fields the AI must extract from unstructured contracts",
+  "type": "object",
+  "required": [
+    "contract_id",
+    "client_name",
+    "contract_type",
+    "contract_value",
+    "start_date",
+    "end_date",
+    "products_services"
+  ],
+  "properties": {
+    "contract_id": {
+      "type": "string",
+      "description": "Unique identifier found in the contract header"
+    },
+    "client_name": {
+      "type": "string",
+      "description": "Legal name of the contracting client"
+    },
+    "client_industry": {
+      "type": "string",
+      "enum": [
+        "Technology",
+        "Manufacturing",
+        "Healthcare",
+        "Finance",
+        "Retail",
+        "Energy",
+        "Logistics",
+        "Government",
+        "Telecommunications",
+        "Other"
+      ]
+    },
+    "contract_type": {
+      "type": "string",
+      "enum": [
+        "SaaS Subscription",
+        "Professional Services",
+        "Licensing",
+        "Maintenance & Support",
+        "Managed Services",
+        "Consulting",
+        "Hardware Supply",
+        "Framework Agreement"
+      ]
+    },
+    "contract_value": {
+      "type": "object",
+      "properties": {
+        "annual_value": { "type": "number" },
+        "total_value": { "type": "number" },
+        "currency": { "type": "string", "default": "EUR" }
+      }
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date"
+    },
+    "duration_months": {
+      "type": "integer"
+    },
+    "auto_renewal": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "renewal_period_months": { "type": "integer" },
+        "opt_out_notice_days": { "type": "integer" }
+      }
+    },
+    "payment_terms": {
+      "type": "object",
+      "properties": {
+        "payment_frequency": {
+          "type": "string",
+          "enum": ["Monthly", "Quarterly", "Semi-Annual", "Annual", "Upon Delivery", "Milestone-Based"]
+        },
+        "net_days": { "type": "integer" },
+        "late_payment_interest_pct": { "type": "number" }
+      }
+    },
+    "discount": {
+      "type": "object",
+      "properties": {
+        "percentage": { "type": "number" },
+        "type": {
+          "type": "string",
+          "enum": ["Volume", "Early Payment", "Loyalty", "Promotional", "Custom", "None"]
+        },
+        "is_anomalous": {
+          "type": "boolean",
+          "description": "True if discount exceeds company standard thresholds (>15% volume, >5% early payment)"
+        }
+      }
+    },
+    "sla_terms": {
+      "type": "object",
+      "properties": {
+        "uptime_guarantee_pct": { "type": "number" },
+        "response_time_hours": { "type": "number" },
+        "resolution_time_hours": { "type": "number" },
+        "is_non_standard": {
+          "type": "boolean",
+          "description": "True if SLA terms deviate from company standard offerings"
+        }
+      }
+    },
+    "penalty_clauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "trigger_condition": { "type": "string" },
+          "penalty_type": {
+            "type": "string",
+            "enum": ["Financial", "Service Credit", "Contract Termination", "Liability"]
+          },
+          "penalty_amount": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["Low", "Medium", "High", "Critical"]
+          }
+        }
+      }
+    },
+    "liability": {
+      "type": "object",
+      "properties": {
+        "liability_cap": { "type": "string" },
+        "unlimited_liability": { "type": "boolean" },
+        "indemnification_clauses": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "termination": {
+      "type": "object",
+      "properties": {
+        "notice_period_days": { "type": "integer" },
+        "termination_for_convenience": { "type": "boolean" },
+        "early_termination_fee": { "type": "string" }
+      }
+    },
+    "products_services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Cloud Platform",
+              "Data Analytics",
+              "Cybersecurity",
+              "AI/ML Solutions",
+              "ERP Integration",
+              "Custom Development",
+              "IT Infrastructure",
+              "Consulting",
+              "Training"
+            ]
+          },
+          "unit_price": { "type": "number" },
+          "quantity": { "type": "integer" }
+        }
+      }
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "flag_type": {
+            "type": "string",
+            "enum": [
+              "Unlimited Liability",
+              "Non-Standard SLA",
+              "Excessive Discount",
+              "Missing Termination Clause",
+              "Unusual Penalty",
+              "Revenue Concentration",
+              "Expiring Soon",
+              "Auto-Renewal Risk",
+              "Non-Standard Payment Terms",
+              "IP Ownership Ambiguity",
+              "Data Residency Concern",
+              "Regulatory Compliance Gap"
+            ]
+          },
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["Low", "Medium", "High", "Critical"]
+          }
+        }
+      }
+    },
+    "jurisdiction": {
+      "type": "string",
+      "description": "Governing law and jurisdiction"
+    },
+    "special_conditions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Any non-standard terms or conditions not captured elsewhere"
+    },
+    "signatories": {
+      "type": "object",
+      "properties": {
+        "provider_signatory": { "type": "string" },
+        "client_signatory": { "type": "string" },
+        "signature_date": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

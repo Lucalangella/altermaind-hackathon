@@ -1,0 +1,172 @@
+================================================================================
+                    MASTER SERVICE AGREEMENT
+                    Contract No. CTR-2024-002
+================================================================================
+
+Date: March 1, 2024
+
+BETWEEN:
+
+DataVista Solutions S.r.l. ("Provider")
+Via della Tecnologia 42, 00144 Rome, Italy
+VAT: IT12345678901
+Represented by: Dr. Marco Bianchi, CEO
+
+AND:
+
+Nexus Technologies GmbH ("Client")
+Leopoldstraße 244, 80807 Munich, Germany
+VAT: DE287654321
+Represented by: Herr Klaus Weber, Managing Director
+
+Client Sector: Technology
+
+================================================================================
+1. SERVICES
+================================================================================
+
+The Provider agrees to deliver the following:
+
+a) DataVista Cloud Platform - Enterprise Plus License
+   - Unlimited users
+   - Multi-region deployment (EU-West, EU-Central)
+   - Dedicated infrastructure
+   - Annual fee: EUR 580,000.00
+
+b) AI/ML Analytics Suite
+   - Custom model training and deployment
+   - NLP-powered document processing
+   - Annual fee: EUR 220,000.00
+
+c) Cybersecurity Add-On
+   - Advanced threat detection
+   - SOC integration
+   - Annual fee: EUR 95,000.00
+
+d) Dedicated Support Team
+   - 2 FTE dedicated engineers
+   - 24/7 support coverage
+   - Annual fee: EUR 180,000.00
+
+Total Annual Contract Value: EUR 1,075,000.00
+Total Contract Value (48 months): EUR 4,300,000.00
+
+================================================================================
+2. DURATION
+================================================================================
+
+2.1 This Agreement is effective from March 1, 2024 and shall remain in
+force for forty-eight (48) months, terminating on February 28, 2028.
+
+2.2 Automatic renewal applies for successive 24-month periods unless
+either party gives at least one hundred eighty (180) days' prior written
+notice before expiration.
+
+================================================================================
+3. FINANCIAL TERMS
+================================================================================
+
+3.1 Invoicing shall occur monthly in arrears.
+
+3.2 Payment is due within forty-five (45) days of invoice date.
+
+3.3 A strategic partnership discount of 22% has been applied to the
+standard list price of the Cloud Platform. This discount was negotiated as
+part of a custom arrangement and exceeds the standard volume discount
+schedule (maximum 15%).
+
+   NOTE: Standard list price for Enterprise Plus is EUR 743,590/year.
+   Applied discount brings this to EUR 580,000/year.
+
+3.4 Late payment interest: 5% per annum.
+
+3.5 Payment shall be made in EUR to the Provider's designated bank account.
+
+================================================================================
+4. SERVICE LEVELS
+================================================================================
+
+4.1 Platform Uptime: 99.99% monthly availability guarantee.
+    (NOTE: Standard offering is 99.5%. This is a custom SLA negotiated
+    specifically for this client.)
+
+4.2 Response Times:
+    - P1 Critical: 15-minute response, 2-hour resolution target
+    - P2 Major: 1-hour response, 8-hour resolution target
+    - P3 Minor: 4-hour response, 48-hour resolution target
+
+4.3 For each 0.01% below the 99.99% uptime guarantee, the Client is
+entitled to a service credit of 5% of the monthly platform fee. Credits
+are uncapped.
+
+================================================================================
+5. PENALTIES AND CONSEQUENCES
+================================================================================
+
+5.1 Chronic SLA Failure: If the platform availability falls below 99.9%
+in any single month, the Client may demand a remediation plan within 5
+business days. If the Provider fails to deliver the plan, the Client may
+terminate immediately.
+
+5.2 Data Breach Penalty: In the event of a data breach attributable to
+Provider negligence, the Provider shall pay liquidated damages of
+EUR 500,000 per incident, in addition to any actual damages.
+
+5.3 Delivery Delays: For any milestone delivered more than 15 business
+days late, a penalty of 2% of the milestone value per week of delay
+applies, with no cap.
+
+================================================================================
+6. LIABILITY
+================================================================================
+
+6.1 IMPORTANT: The Provider accepts UNLIMITED LIABILITY for:
+    - Data breaches caused by Provider negligence
+    - Intellectual property infringement
+    - Willful misconduct
+
+6.2 For all other claims, liability is capped at 200% of the annual
+contract value.
+
+6.3 The Provider shall indemnify and hold harmless the Client against
+any third-party claims arising from the Provider's breach of data
+protection obligations under GDPR.
+
+================================================================================
+7. INTELLECTUAL PROPERTY
+================================================================================
+
+7.1 All custom models developed using the Client's data shall be jointly
+owned by both parties.
+
+7.2 The Client retains exclusive rights to any derivative insights
+generated from their proprietary datasets.
+
+================================================================================
+8. TERMINATION
+================================================================================
+
+8.1 Either party may terminate for material breach with 30 days' notice.
+
+8.2 The Client may terminate for convenience at any time with 120 days'
+notice, subject to payment of remaining fees for the current contract year.
+
+8.3 No early termination fee applies if termination is due to Provider's
+SLA failures as defined in Section 5.1.
+
+================================================================================
+9. GOVERNING LAW
+================================================================================
+
+This Agreement shall be governed by German law. Disputes shall be resolved
+through arbitration under ICC rules, with the seat of arbitration in
+Frankfurt am Main.
+
+================================================================================
+SIGNATURES
+================================================================================
+
+Dr. Marco Bianchi                    Herr Klaus Weber
+CEO, DataVista Solutions S.r.l.      Managing Director, Nexus Technologies GmbH
+
+Date: March 1, 2024                  Date: March 1, 2024

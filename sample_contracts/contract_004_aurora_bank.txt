@@ -1,0 +1,174 @@
+================================================================================
+              FINANCIAL SERVICES TECHNOLOGY AGREEMENT
+                    Contract No. CTR-2023-004
+================================================================================
+
+Date of Execution: September 1, 2023
+
+BETWEEN:
+
+DataVista Solutions S.r.l. (hereinafter "Supplier")
+Via della Tecnologia 42, 00144 Rome, Italy
+
+AND:
+
+Aurora Bank S.p.A. (hereinafter "Bank")
+Piazza Affari 6, 20123 Milan, Italy
+Authorized Credit Institution - Bank of Italy Register No. 5432
+
+Client Industry: Finance / Banking
+
+================================================================================
+SECTION 1 - SCOPE OF SERVICES
+================================================================================
+
+The Supplier shall provide:
+
+1.1 DataVista Cloud Platform - Financial Services Edition
+    - Compliance with Bank of Italy Circular 285 requirements
+    - Segregated environment with dedicated encryption keys
+    - Up to 1,000 users across 85 branches
+    - Annual license: EUR 480,000.00
+
+1.2 Anti-Money Laundering (AML) Analytics Module
+    - Transaction pattern detection
+    - Suspicious activity reporting automation
+    - Annual fee: EUR 165,000.00
+
+1.3 Risk Analytics Dashboard
+    - Credit risk modeling
+    - Market risk visualization
+    - Operational risk tracking
+    - Annual fee: EUR 120,000.00
+
+1.4 Regulatory Reporting Automation
+    - COREP/FINREP automated generation
+    - ECB statistical reporting
+    - Annual fee: EUR 85,000.00
+
+1.5 Annual Maintenance and Support
+    - Annual fee: EUR 50,000.00
+
+Total Annual Contract Value: EUR 900,000.00
+Total Contract Value (60 months): EUR 4,500,000.00
+
+================================================================================
+SECTION 2 - TERM
+================================================================================
+
+2.1 The Agreement commences on September 1, 2023 and shall continue for
+a period of sixty (60) months, expiring on August 31, 2028.
+
+2.2 Automatic renewal for successive 12-month periods applies unless
+either party provides 120 days' written notice of non-renewal.
+
+================================================================================
+SECTION 3 - PRICING AND PAYMENT
+================================================================================
+
+3.1 Payment: Quarterly in advance, net 30 days.
+
+3.2 A loyalty discount of 12% has been applied, reflecting the Bank's
+status as a long-standing client since 2019.
+
+3.3 An additional early payment discount of 3% applies if invoices are
+settled within 10 days.
+
+3.4 Price escalation: Fixed pricing for the first 36 months. Thereafter,
+annual increases capped at 3% or CPI, whichever is lower.
+
+3.5 Late payment: 8% annual interest plus EUR 40 recovery costs per
+late invoice (per Italian Legislative Decree 231/2002).
+
+================================================================================
+SECTION 4 - SERVICE LEVELS
+================================================================================
+
+4.1 Platform Availability: 99.95% monthly uptime.
+
+4.2 Dedicated Financial Services Support:
+    - P1 (Trading/Core Banking Impact): 15-minute response, 1-hour resolution
+    - P2 (Regulatory Reporting Impact): 30-minute response, 4-hour resolution
+    - P3 (General): 2-hour response, 24-hour resolution
+
+4.3 Service Credits: 10% of monthly fee for each hour of P1 downtime
+beyond the SLA, uncapped. The Bank may also claim actual damages.
+
+================================================================================
+SECTION 5 - PENALTIES
+================================================================================
+
+5.1 Regulatory Non-Compliance: If any failure of the Supplier's system
+directly causes the Bank to miss a regulatory filing deadline, the
+Supplier shall reimburse any fine imposed by the regulator, up to
+EUR 1,000,000 per incident.
+
+5.2 AML System Failure: If the AML module fails to flag a transaction
+that should have been flagged under current regulations, and this results
+in regulatory action against the Bank, the Supplier shall be liable for
+the full amount of any resulting fine.
+
+   *** THIS IS AN UNCAPPED PENALTY CLAUSE ***
+
+5.3 Data Breach: EUR 250,000 per incident plus actual damages.
+
+================================================================================
+SECTION 6 - LIABILITY
+================================================================================
+
+6.1 General liability cap: 300% of annual contract value (EUR 2,700,000).
+
+6.2 NO CAP applies to:
+    - Breaches of data protection obligations
+    - AML system failures (see Section 5.2)
+    - Fraud or willful misconduct
+
+6.3 The Supplier shall maintain:
+    - Professional indemnity insurance: minimum EUR 5,000,000
+    - Cyber liability insurance: minimum EUR 10,000,000
+
+================================================================================
+SECTION 7 - REGULATORY AND COMPLIANCE
+================================================================================
+
+7.1 The Supplier acknowledges that the Bank is subject to supervision by
+Banca d'Italia, CONSOB, and the European Central Bank (ECB).
+
+7.2 The Supplier shall provide full access to its systems, premises,
+and documentation to the Bank's regulators upon request.
+
+7.3 The Supplier shall comply with all outsourcing requirements under
+EBA Guidelines on Outsourcing (EBA/GL/2019/02).
+
+7.4 Annual ISAE 3402 Type II audit reports shall be provided at the
+Supplier's expense.
+
+================================================================================
+SECTION 8 - TERMINATION
+================================================================================
+
+8.1 The Bank may terminate immediately upon regulatory order.
+
+8.2 Either party may terminate for material breach with 60 days' notice.
+
+8.3 The Bank may terminate for convenience with 180 days' notice and
+payment of a termination fee equal to 50% of remaining contract value.
+
+8.4 Upon termination, the Supplier shall provide transition assistance
+for up to 12 months at standard commercial rates.
+
+================================================================================
+SECTION 9 - GOVERNING LAW
+================================================================================
+
+Italian law. Jurisdiction: Court of Milan. Arbitration under the rules
+of the Milan Chamber of Arbitration is available as an alternative.
+
+================================================================================
+SIGNATURES
+================================================================================
+
+Dr. Marco Bianchi                    Dott. Alessandro Conti
+CEO, DataVista Solutions S.r.l.      CEO, Aurora Bank S.p.A.
+
+Date: September 1, 2023              Date: September 1, 2023

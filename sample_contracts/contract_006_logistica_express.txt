@@ -1,0 +1,126 @@
+================================================================================
+                    MANAGED SERVICES AGREEMENT
+                    Contract No. CTR-2024-006
+================================================================================
+
+Effective Date: April 15, 2024
+
+PROVIDER: DataVista Solutions S.r.l., Rome, Italy
+CLIENT: Logistica Express S.r.l., Via Appia Nuova 501, 00179 Rome, Italy
+         P.IVA: IT33445566778
+         Represented by: Sig. Roberto Ferrara, General Manager
+
+Client Industry: Logistics / Transportation
+
+================================================================================
+1. SERVICES AND FEES
+================================================================================
+
+1.1 DataVista Cloud Platform - SME License
+    - Up to 50 users
+    - Standard deployment
+    - Annual fee: EUR 48,000.00
+
+1.2 Fleet Management Analytics
+    - GPS data integration and route optimization
+    - Fuel consumption analytics
+    - Annual fee: EUR 22,000.00
+
+1.3 Warehouse Management Dashboard
+    - Inventory tracking and forecasting
+    - Annual fee: EUR 18,000.00
+
+Total Annual Contract Value: EUR 88,000.00
+Total Contract Value (24 months): EUR 176,000.00
+
+================================================================================
+2. TERM
+================================================================================
+
+2.1 Duration: 24 months (April 15, 2024 - April 14, 2026).
+
+   *** CONTRACT EXPIRES IN LESS THAN 1 MONTH - CRITICAL RENEWAL NEEDED ***
+
+2.2 Auto-renewal: 12-month periods, 30 days' opt-out notice.
+
+   NOTE: The opt-out notice period is unusually short (company standard
+   is 90 days). This was agreed as a special concession.
+
+================================================================================
+3. PRICING
+================================================================================
+
+3.1 Monthly invoicing, payment net 45 days.
+
+3.2 SPECIAL DISCOUNT: A promotional discount of 35% was applied to the
+Cloud Platform license for the first year as part of a market entry
+initiative in the logistics sector.
+
+    Standard SME Platform price: EUR 73,846/year
+    Year 1 discounted price: EUR 48,000/year
+    Year 2 reverts to standard pricing
+
+    *** WARNING: This 35% discount significantly exceeds the maximum
+    authorized promotional discount of 20%. Approved as exception by
+    VP Sales, Ref: APPROVAL-2024-0189 ***
+
+3.3 No late payment interest clause is included in this contract.
+
+   *** ANOMALY: All standard contracts include late payment interest.
+   This clause was inadvertently omitted during drafting. ***
+
+================================================================================
+4. SERVICE LEVELS
+================================================================================
+
+4.1 Platform Uptime: 99.0% (standard for SME tier is 99.5%).
+
+    *** BELOW-STANDARD SLA: This client receives a lower uptime
+    guarantee than the standard SME offering. ***
+
+4.2 Support: Business hours only (9:00-18:00, Mon-Fri)
+    - P1: 4-hour response, 24-hour resolution
+    - P2: 8-hour response, 48-hour resolution
+    - P3: Next business day response
+
+4.3 No SLA credits are offered under this contract.
+
+================================================================================
+5. PENALTIES
+================================================================================
+
+None. No penalty clauses were included in this contract.
+
+================================================================================
+6. LIABILITY
+================================================================================
+
+6.1 Liability capped at 50% of annual contract value (EUR 44,000).
+
+6.2 No indemnification clauses.
+
+================================================================================
+7. TERMINATION
+================================================================================
+
+7.1 Either party: 30 days' notice for material breach.
+
+7.2 No termination for convenience clause.
+
+   *** MISSING CLAUSE: Standard contracts include termination for
+   convenience. This omission restricts flexibility. ***
+
+================================================================================
+8. GOVERNING LAW
+================================================================================
+
+Italian law. Court of Rome.
+
+================================================================================
+SIGNATURES
+================================================================================
+
+Dr. Marco Bianchi                    Sig. Roberto Ferrara
+CEO, DataVista Solutions S.r.l.      GM, Logistica Express S.r.l.
+
+Date: April 15, 2024                 Date: April 15, 2024
