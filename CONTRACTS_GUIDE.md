@@ -91,9 +91,50 @@
 
 ---
 
-### 5. Risk & Exposure Dashboard
+### 5. SLA Burden Score
 
-**What to visualize:** Risk matrix (likelihood × impact) or severity-sorted list.
+**What to visualize:** Horizontal bar chart showing per-contract deviation from company standard SLA.
+
+The raw P1/P2/P3 response and resolution times differ across every contract. Instead of showing a comparison matrix, we compute a single **SLA Burden Score** that normalizes everything into one number:
+
+**Standard baseline (what every contract *should* have):**
+- P1: 2 hr response / 8 hr resolution
+- P2: 4 hr response / 24 hr resolution
+- P3: 8 hr response / 72 hr resolution
+
+**Formula:**
+```
+For each priority level:
+  deviation = (standard_hours - actual_hours) / standard_hours
+
+SLA Burden Score = P1_deviation * 0.50
+                 + P2_deviation * 0.30
+                 + P3_deviation * 0.20
+```
+
+Positive = stricter than standard (higher operational cost). Negative = looser.
+
+**Pre-computed scores for our contracts:**
+
+| Client | Score | Meaning |
+|--------|------:|---------|
+| Nexus Technologies (002) | +82% | Far above standard — 15min/2hr P1, uncapped credits |
+| Aurora Bank (004) | +75% | 15min/1hr P1, financial regulatory urgency |
+| Salus Healthcare (003) | +35% | 30min P1 response (healthcare context) |
+| Belmonte - Fashion Week (008) | +30% | Seasonal spike to 99.9%, 30min P1 during events |
+| Meridian Group (001) | 0% | Matches standard exactly |
+| TelcoItalia Plus (007) | 0% | Matches standard exactly |
+| Regione Campania (009) | -15% | Slower resolution (government business hours) |
+| Verde Energia (005) | -30% | 4hr P1 response, 24hr resolution |
+| Logistica Express (006) | -40% | Below-standard + no SLA credits |
+
+**Insight:** The two highest-revenue clients (Nexus, Aurora) also carry the highest SLA burden — meaning operational cost is disproportionately concentrated. If either has an outage, the financial penalty exposure compounds with the stricter SLA.
+
+---
+
+### 6. Risk & Exposure Dashboard
+
+**What to visualize:** Risk matrix (likelihood x impact) or severity-sorted list.
 
 | Risk | Contract | Severity | Financial Exposure |
 |------|----------|----------|--------------------|
@@ -101,12 +142,12 @@
 | Unlimited liability (data breach) | 002 Nexus | CRITICAL | Uncapped |
 | Unlimited liability (trade secrets) | 008 Belmonte | CRITICAL | Uncapped |
 | Uncapped SLA credits | 002 Nexus | HIGH | Uncapped |
-| Data breach penalty (€500K/incident) | 002 Nexus | HIGH | €500K/incident |
-| Data breach penalty (€250K/incident) | 004 Aurora Bank | HIGH | €250K/incident |
-| Fashion Week downtime penalty | 008 Belmonte | HIGH | €50K/incident |
-| Regulatory fine pass-through | 004 Aurora Bank | HIGH | Up to €1M |
-| CV false positive liability | 010 Nexus Addon | HIGH | Up to €500K |
-| Client concentration (top 3 = 69%) | Portfolio-wide | HIGH | €3.6M at risk |
+| Data breach penalty (500K/incident) | 002 Nexus | HIGH | 500K/incident |
+| Data breach penalty (250K/incident) | 004 Aurora Bank | HIGH | 250K/incident |
+| Fashion Week downtime penalty | 008 Belmonte | HIGH | 50K/incident |
+| Regulatory fine pass-through | 004 Aurora Bank | HIGH | Up to 1M |
+| CV false positive liability | 010 Nexus Addon | HIGH | Up to 500K |
+| Client concentration (top 3 = 69%) | Portfolio-wide | HIGH | 3.6M at risk |
 | Missing contract clauses | 006 Logistica | MEDIUM | Operational |
 | Non-standard payment terms (Net 90) | 008 Belmonte | MEDIUM | Cash flow |
 | IP joint ownership ambiguity | 002 Nexus | MEDIUM | Legal |
@@ -122,7 +163,7 @@ The AI should extract these fields from every contract (see `extraction_schema.j
 **Core Identity:** contract_id, client_name, client_industry, contract_type
 **Financial:** annual_value, total_value, currency, discount (% + type + is_anomalous), payment_terms (frequency, net_days, late_interest)
 **Temporal:** start_date, end_date, duration, auto_renewal (enabled, period, opt-out_notice)
-**SLA:** uptime_guarantee, response_times (P1/P2/P3), resolution_times, sla_credits, is_non_standard
+**SLA:** uptime_guarantee, priority_levels (P1/P2/P3 response + resolution hours each), sla_credits (per_violation + cap), seasonal_sla, is_non_standard, sla_burden_score (computed)
 **Risk:** penalty_clauses (trigger, type, amount, severity), liability_cap, unlimited_liability_areas, indemnification
 **Termination:** notice_period, convenience_termination, early_termination_fee
 **Products:** list of products/services with category and pricing

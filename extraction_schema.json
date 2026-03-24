@@ -107,11 +107,56 @@
       "type": "object",
       "properties": {
         "uptime_guarantee_pct": { "type": "number" },
-        "response_time_hours": { "type": "number" },
-        "resolution_time_hours": { "type": "number" },
+        "priority_levels": {
+          "type": "object",
+          "description": "Response and resolution times per priority level",
+          "properties": {
+            "P1": {
+              "type": "object",
+              "properties": {
+                "response_time_hours": { "type": "number" },
+                "resolution_time_hours": { "type": "number" }
+              }
+            },
+            "P2": {
+              "type": "object",
+              "properties": {
+                "response_time_hours": { "type": "number" },
+                "resolution_time_hours": { "type": "number" }
+              }
+            },
+            "P3": {
+              "type": "object",
+              "properties": {
+                "response_time_hours": { "type": "number" },
+                "resolution_time_hours": { "type": "number" }
+              }
+            }
+          }
+        },
+        "sla_credits": {
+          "type": "object",
+          "properties": {
+            "credit_per_violation": { "type": "string", "description": "e.g. '2% of monthly fee per 0.1% below uptime'" },
+            "credit_cap": { "type": "string", "description": "'uncapped' or e.g. '15% of monthly fee'" }
+          }
+        },
+        "seasonal_sla": {
+          "type": ["object", "null"],
+          "description": "Non-null only if the contract has enhanced SLAs during specific periods",
+          "properties": {
+            "period_description": { "type": "string" },
+            "uptime_guarantee_pct": { "type": "number" },
+            "p1_response_time_hours": { "type": "number" }
+          }
+        },
         "is_non_standard": {
           "type": "boolean",
           "description": "True if SLA terms deviate from company standard offerings"
+        },
+        "sla_burden_score": {
+          "type": "number",
+          "description": "Computed at application layer. Weighted deviation from standard SLA: (standard - actual) / standard, weighted P1=50%, P2=30%, P3=20%. Positive = stricter than standard, negative = looser."
         }
       }
     },
